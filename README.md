@@ -48,6 +48,10 @@ After installation and configuration, a floating button will appear on each blog
 
 This plugin is licensed under the **Boost Software License 1.0**.
 
+## Acknowledgment
+
+This project was inspired by the work of [htejera](https://github.com/htejera/publii-2pdf), who developed a similar plugin using the `jsPDF` library. Their approach helped me understand how to implement PDF generation, which I then applied in this plugin.
+
 ## Contributing
 
 1. **Fork the repository**: Click the "Fork" button in the top-right corner of this page to make a copy of the repository.
