@@ -46,7 +46,7 @@ After installation and configuration, a floating button will appear on each blog
 
 ## License
 
-This plugin is licensed under the **MIT License**.
+This plugin is licensed under the **Boost Software License 1.0**.
 
 ## Contributing
 
