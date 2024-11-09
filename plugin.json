@@ -1,0 +1,132 @@
+{
+    "name": "Post to PDF",
+    "description": "A Publii plugin that adds option to download posts on the website.",
+    "license": "GPL-3.0",
+    "author": "freaks-dev",
+    "version": "1.1.6",
+    "scope": "site",
+    "minimumPubliiVersion": "0.46.2",
+    "assets": {
+		"front": [
+			"jspdf.umd.min.js"
+		]
+	},
+    "messageInOptions": {
+        "type": "info",
+        "text": "Customize the plugin settings below."
+    },
+    "config": [
+        {
+            "name": "pdfIconPosition",
+            "label": "Position of the PDF icon",
+            "note": "Choose whether the PDF download icon should appear on the left or right side of the screen.",
+            "group": "Button Settings",
+            "value": "right",
+            "type": "select",
+            "options": [
+                { "label": "Right", "value": "right" },
+                { "label": "Left", "value": "left" }
+            ]
+        },
+        {
+            "name": "buttonText",
+            "label": "Button Text",
+            "note": "Text displayed on the PDF button.",
+            "group": "Button Settings",
+            "value": "Download PDF",
+            "type": "text"
+        },
+        {
+            "name": "buttonBackgroundColor",
+            "label": "Button Background Color",
+            "note": "Specify the background color of the button.",
+            "group": "Button Styling",
+            "value": "#007bff",
+            "type": "colorpicker"
+        },
+        {
+            "name": "buttonTextColor",
+            "label": "Button Text Color",
+            "note": "Specify the text color of the button.",
+            "group": "Button Styling",
+            "value": "#FFFFFF",
+            "type": "colorpicker"
+        },
+        {
+            "name": "titleFontSize",
+            "label": "Title Font Size",
+            "note": "Set the font size for the post title in the PDF.",
+            "group": "PDF Settings",
+            "value": 18,
+            "type": "number"
+        },
+        {
+            "name": "contentFontSize",
+            "label": "Content Font Size",
+            "note": "Set the font size for the post content in the PDF.",
+            "group": "PDF Settings",
+            "value": 12,
+            "type": "number"
+        },
+        {
+            "name": "lineSpacing",
+            "label": "Line Spacing",
+            "note": "Set the line space for the post content in the PDF.",
+            "group": "PDF Settings",
+            "value": 0.5,
+            "type": "number"
+        },
+        {
+            "name": "includeImages",
+            "label": "Include Images",
+            "note": "Choose whether to include images in the PDF.",
+            "group": "PDF Settings",
+            "value": true,
+            "type": "checkbox"
+        },
+        {
+			"name": "headingFont",
+			"label": "Headings Font",
+			"note": "",
+			"group": "Font Style",
+			"value": "helvetica",
+			"type": "select",
+			"options": [
+				{
+					"label": "Helvetica",
+					"value": "helvetica"
+				},
+				{
+					"label": "Courier",
+					"value": "courier"
+				},
+				{
+					"label": "Times",
+					"value": "times"
+				}
+			]
+		},
+        {
+			"name": "contentFont",
+			"label": "Paragraph Font",
+			"note": "",
+			"group": "Font Style",
+			"value": "times",
+			"type": "select",
+			"options": [
+				{
+					"label": "Helvetica",
+					"value": "helvetica"
+				},
+				{
+					"label": "Courier",
+					"value": "courier"
+				},
+				{
+					"label": "Times",
+					"value": "times"
+				}
+			]
+		}
+    ]
+}
