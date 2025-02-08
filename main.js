@@ -53,7 +53,7 @@ class PDFConverterPlugin {
             document.addEventListener('DOMContentLoaded', function() {
                 if (window.location.pathname !== '/') {
                     const script = document.createElement('script');
-                    script.src = '${rendererInstance.siteConfig.domain}/media/plugins/posttopdf/jspdf.umd.min.js';
+                    script.src = '${rendererInstance.siteConfig.domain}/media/plugins/postToPdf/jspdf.umd.min.js';
                     script.onload = function() {
                         const { jsPDF } = window.jspdf;
     
